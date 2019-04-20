@@ -33,7 +33,6 @@ class App extends Component {
     const {firstSet, secondSet} = this.state;
     let commons = this.commonFinder.findCommons(firstSet, secondSet);
     this.setState({commons:commons})
-    console.log(commons);
   }
 
   render() {
@@ -45,7 +44,6 @@ class App extends Component {
         <div>
             <p>{commons}</p>
         </div>
-
       </div>
     );
   }
