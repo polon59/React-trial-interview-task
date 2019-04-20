@@ -5,12 +5,6 @@ class CommonFinder{
         const secondList = secondSet.split(" ");
         let common = '';
 
-        // console.log(firstSet);
-        // console.log(secondSet);
-
-        console.log(firstList);
-        console.log(secondList);
-
         firstList.forEach(firstListWord => {
             secondList.forEach(secondListWord =>{
                 if (firstListWord === secondListWord) {
@@ -18,9 +12,7 @@ class CommonFinder{
                 }
             })
         });
-
         return common;
     }
-
 }
 export default CommonFinder;
