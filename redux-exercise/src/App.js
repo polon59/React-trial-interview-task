@@ -18,19 +18,15 @@ class App extends Component {
 
   handleChange = (e) =>{
     const newValue = e.target.value;
-    
     if (e.target.id === 'first'){
       this.setState({firstSet:newValue}, ()=>{
         this.findCommonWords();
+        return;
       })
     }
-    else{
       this.setState({secondSet:newValue}, ()=>{
         this.findCommonWords();
       })
-    }
-
-    
   }
 
   findCommonWords = () =>{
@@ -39,7 +35,6 @@ class App extends Component {
     this.setState({commons:commons})
     console.log(commons);
   }
-
 
   render() {
     const {commons} = this.state;
