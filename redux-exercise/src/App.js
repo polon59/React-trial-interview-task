@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import WordBox from './components/WordBox';
-import Common from './components/Common';
 import CommonFinder from './components/CommonFinder';
 import './App.css';
 
