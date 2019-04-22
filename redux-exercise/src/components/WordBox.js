@@ -1,15 +1,11 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-class WordBox extends Component{
-
-    render(){
-        const {name,handleChange} = this.props;
-
-        return(
-            <div>
-                <textarea id={name} cols="30" rows="10" onChange={handleChange}></textarea>
-            </div>
-        )
-    }
+const WordBox = (props) =>{
+    const {name,handleChange} = props;
+    return(
+        <div>
+            <textarea id={name} cols="30" rows="10" onChange={handleChange}></textarea>
+        </div>
+    )
 }
 export default WordBox;
