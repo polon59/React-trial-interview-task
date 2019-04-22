@@ -20,12 +20,13 @@ class App extends Component {
     if (e.target.id === 'first'){
       this.setState({firstSet:newValue}, ()=>{
         this.findCommonWords();
-        return;
       })
     }
+    else{
       this.setState({secondSet:newValue}, ()=>{
         this.findCommonWords();
       })
+    }
   }
 
   findCommonWords = () =>{
